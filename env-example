@@ -1,5 +1,5 @@
 ENVIRONMENT=development
-SPANNER_INSTANCE=transit
-SPANNER_DATABASE=transitdb
+SPANNER_INSTANCE=graphxr
+SPANNER_DATABASE=finance-graph-db
 GOOGLE_CLOUD_PROJECT=code4demo
-GRAPH_NAME=TransitGraph
+GRAPH_NAME=FinGraph
