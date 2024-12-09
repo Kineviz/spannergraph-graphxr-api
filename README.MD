@@ -68,13 +68,6 @@ uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 - `GET /api/v1/spanner/schema`: Retrieve database schema information
 - `POST /api/v1/spanner/execute`: Execute graph queries
 - `GET /api/v1/spanner/samples`: Get predefined query samples
-
-## API Documentation
-
-Once the application is running, you can access:
-- Swagger UI: `http://localhost:8000/docs`
-- ReDoc: `http://localhost:8000/redoc`
-
 ## Environment Variables
 
 | Variable | Description | Default |
