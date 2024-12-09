@@ -1,0 +1,5 @@
+samples:
+  - name: "Sample 1"
+    command: "(n:Person)-[:KNOWS]->(m:Person)"
+  - name: "Sample 2"
+    command: "(n:User)-[:PURCHASED]->(p:Product)"

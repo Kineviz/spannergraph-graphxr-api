@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      args:
+        USE_TUNA: true
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+      - ./samples.yaml:/app/samples.yaml
+      - ./credentials.json:/app/credentials.json
+    environment:
+      - ENVIRONMENT=development
+      - SPANNER_INSTANCE=transit
+      - SPANNER_DATABASE=transitdb
+      - SAMPLES_PATH=/app/samples.yaml
+      - GOOGLE_APPLICATION_CREDENTIALS=/app/credentials.json
+      - GOOGLE_CLOUD_PROJECT=code4demo
+      - GRAPH_NAME=TransitGraph
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
