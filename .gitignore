@@ -41,3 +41,4 @@ ENV/
 
 # Google Cloud
 credentials.json
+.DS_Store
