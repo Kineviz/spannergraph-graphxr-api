@@ -23,16 +23,6 @@ GOOGLE_CLOUD_PROJECT=code4demo
 GRAPH_NAME=TransitGraph
 ```
 
-## Configure Samples(Optional)
-
-### samples.yaml
-Create a `samples.yaml` file to define your graph query samples:
-
-```yaml
-samples:
-  - name: "Sample Query Name"
-    command: "(n:Label)-[:RELATIONSHIP]->(m:Label)"
-```
 
 ## Running the Application
 
@@ -69,6 +59,7 @@ To connect the API with GraphXR Grove, follow these steps:
 
 1. Access GraphXR Grove through one of these options:
    - Use the shared demo link: [Spanner Graph Transit Demo](https://graphxr.kineviz.com/share/677ce4fc63df25e71340f471/spanner-graph-transit-demo?userID=5c020fe520f1ed00216552c3&groveProjectId=677ce4fc63df25e71340f471&groveFileKey=spanner-graph&groveVersion=0&groveFullscreen=true&groveReadonly=true&groveBlockMode=hide)
+   > **Notice:** The demo link uses a trial database which may not always be accessible. If you encounter connection issues, please set up your own project following the instructions below.
    - Create your own project in GraphXR Grove
 
 2. If creating your own project:
@@ -110,6 +101,12 @@ To connect the API with GraphXR Grove, follow these steps:
 ├── requirements.txt    # Python dependencies
 └── samples.yaml        # Sample queries configuration
 ```
+## Data Source
+
+The transit data used in this project is sourced from [TransitFraudDemo](https://github.com/maguec/TransitFraudDemo), which provides sample transit data for demonstration purposes.
+
+
+
 
 ## Development
 
