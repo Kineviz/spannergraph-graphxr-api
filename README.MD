@@ -63,6 +63,25 @@ pip install -r requirements.txt
 uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
+## Connect with GraphXR Grove
+
+To connect the API with GraphXR Grove, follow these steps:
+
+1. Access GraphXR Grove through one of these options:
+   - Use the shared demo link: [Spanner Graph Transit Demo](https://graphxr.kineviz.com/share/677ce4fc63df25e71340f471/spanner-graph-transit-demo?userID=5c020fe520f1ed00216552c3&groveProjectId=677ce4fc63df25e71340f471&groveFileKey=spanner-graph&groveVersion=0&groveFullscreen=true&groveReadonly=true&groveBlockMode=hide)
+   - Create your own project in GraphXR Grove
+
+2. If creating your own project:
+   - Open GraphXR Grove
+   - Create a new project
+   - Navigate to the Grove panel
+   - Drag and drop the Grove connector to connect to your API endpoint (http://localhost:8000)
+
+3. Configure the connection:
+   - Set the API endpoint URL
+   - Test the connection to ensure it's working properly
+   - Start exploring your graph data through the GraphXR interface 
+
 ## API Endpoints
 
 - `GET /api/v1/spanner/schema`: Retrieve database schema information
