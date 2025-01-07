@@ -1,6 +1,6 @@
-# FastAPI Graph Query Service
+#  GraphXR Spanner Connector
 
-A FastAPI-based service that provides graph query capabilities using Google Cloud Spanner.
+A FastAPI-based service that enables GraphXR to connect and visualize graph data stored in Google Cloud Spanner. This API service acts as a bridge between GraphXR and Spanner Graph, allowing interactive graph data exploration and visualization.
 
 ## Prerequisites
 
