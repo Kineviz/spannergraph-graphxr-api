@@ -74,6 +74,11 @@ To connect the API with GraphXR Grove, follow these steps:
 
 ![Spanner Graph UI](https://github.com/Kineviz/spannergraph-graphxr-api/blob/master/images/spanner-graph.jpg?raw=true)
 
+4. Demo :
+
+![Spanner Graph Demo](https://github.com/Kineviz/spannergraph-graphxr-api/blob/master/images/demo.gif?raw=true)
+
+
 ## API Endpoints
 
 - `GET /api/v1/spanner/schema`: Retrieve database schema information
