@@ -76,7 +76,7 @@ To connect the API with GraphXR Grove, follow these steps:
    - Create a new project
    - Navigate to the Grove panel
    - Drag and drop the Grove connector to connect to your API endpoint (http://localhost:8000)
-   - Import the provided Grove connector file: [spanner-graph.grove](https://raw.githubusercontent.com/Kineviz/spannergraph-graphxr-api/master/grove/spanner-graph.grove)
+   - Import the provided Grove connector file: [spanner-graph.grove](https://github.com/Kineviz/spannergraph-graphxr-api/blob/master/spanner-graph.grove)
    - Set the server address to http://localhost:8000
 
 3. You should see a UI like this:
