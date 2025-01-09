@@ -12,7 +12,7 @@ A FastAPI-based service that enables GraphXR to connect and visualize graph data
 
 1. Clone the repository
 2. Place your `credentials.json` file in the project root directory
-3. Or Create a `.env` file with the following variables or set them in the docker-compose.yml file:
+3. Create a `.env` file with the following variables or set them in the docker-compose.yml file:
 
 ```
 ENVIRONMENT=development
@@ -52,7 +52,7 @@ pip install -r requirements.txt
 uvicorn main:app --host 0.0.0.0 --port 8000 
 ```
 
-## Connect with GraphXR Grove
+## Connect Spanner Graph with GraphXR Grove
 
 To connect the API with GraphXR Grove, follow these steps:
 
@@ -70,7 +70,7 @@ To connect the API with GraphXR Grove, follow these steps:
 
 3. You should see a UI like this:
 
-![Spanner Graph UI](https://github.com/Kineviz/spannergraph-graphxr-api/blob/master/images/spanner-graph.jpg?raw=true)
+![Spanner Graph Grove UI](https://github.com/Kineviz/spannergraph-graphxr-api/blob/master/images/spanner-graph.jpg?raw=true)
 
 ![Spanner Graph Demo](https://github.com/Kineviz/spannergraph-graphxr-api/blob/master/images/demo.gif?raw=true)
 
@@ -104,7 +104,7 @@ To connect the API with GraphXR Grove, follow these steps:
 ```
 ## Data Source
 
-The transit data used in this project is sourced from [TransitFraudDemo](https://github.com/maguec/TransitFraudDemo), which provides sample transit data for demonstration purposes.
+The demo data used in this project is sourced from [TransitFraudDemo](https://github.com/maguec/TransitFraudDemo), which provides sample transit data for demonstration purposes.
 
 
 
