@@ -1,10 +1,9 @@
-#  GraphXR Spanner Connector
+#  GraphXR Spanner Graph Connector
 
-A FastAPI-based service that enables GraphXR to connect and visualize graph data stored in Google Cloud Spanner. This API service acts as a bridge between GraphXR and Spanner Graph, allowing interactive graph data exploration and visualization.
+A FastAPI-based service that enables GraphXR to connect and visualize graph data stored in Google Cloud Spanner Graph. This API service acts as a bridge between GraphXR and Spanner Graph, allowing interactive graph data exploration and visualization.
 
 ## Prerequisites
 
-- Docker and Docker Compose
 - Google Cloud Platform account
 - Google Cloud Spanner instance
 - Google Cloud credentials (credentials.json)
@@ -13,7 +12,7 @@ A FastAPI-based service that enables GraphXR to connect and visualize graph data
 
 1. Clone the repository
 2. Place your `credentials.json` file in the project root directory
-3. Create a `.env` file with the following variables or set them in the docker-compose.yml file:
+3. Or Create a `.env` file with the following variables or set them in the docker-compose.yml file:
 
 ```
 ENVIRONMENT=development
@@ -50,7 +49,7 @@ pip install -r requirements.txt
 
 3. Run the application:
 ```bash
-uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+uvicorn main:app --host 0.0.0.0 --port 8000 
 ```
 
 ## Connect with GraphXR Grove
@@ -63,18 +62,15 @@ To connect the API with GraphXR Grove, follow these steps:
    - Create your own project in GraphXR Grove
 
 2. If creating your own project:
-   - Open GraphXR(https://graphxr.kineviz.com/)
+   - Open [GraphXR](https://graphxr.kineviz.com/)
    - Create a new project
-   - Navigate to the Grove panel
-   - Drag and drop the Grove connector to connect to your API endpoint (http://localhost:8000)
-   - Import the provided Grove connector file: [spanner-graph.grove](https://github.com/Kineviz/spannergraph-graphxr-api/blob/master/spanner-graph.grove)
-   - Set the server address to http://localhost:8000
+   - In the Grove panel:
+     - Import [spanner-graph.grove](https://github.com/Kineviz/spannergraph-graphxr-api/blob/master/spanner-graph.grove)
+     - Connect to http://localhost:8000 using the Grove
 
 3. You should see a UI like this:
 
 ![Spanner Graph UI](https://github.com/Kineviz/spannergraph-graphxr-api/blob/master/images/spanner-graph.jpg?raw=true)
-
-4. Demo :
 
 ![Spanner Graph Demo](https://github.com/Kineviz/spannergraph-graphxr-api/blob/master/images/demo.gif?raw=true)
 
@@ -111,11 +107,6 @@ To connect the API with GraphXR Grove, follow these steps:
 The transit data used in this project is sourced from [TransitFraudDemo](https://github.com/maguec/TransitFraudDemo), which provides sample transit data for demonstration purposes.
 
 
-
-
-## Development
-
-The application uses FastAPI with automatic reload enabled in development mode. Any changes to the Python files will trigger an automatic restart of the application.
 
 ## Security Notes
 
